@@ -130,18 +130,20 @@
       justify-content: center;
       background: var(--white);
       color: var(--cta-orange);
-      padding: 17px 30px;
+      padding: 18px 32px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: .05em;
-      border: 2px solid var(--ink);
-      transition: transform .2s ease, background .2s ease, color .2s ease;
+      border-radius: 10px;
+      box-shadow: 0 9px 22px rgba(23, 19, 15, .22);
+      transition: transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
     }
 
     .cta:hover {
-      transform: translateY(-3px);
+      transform: translateY(-4px);
       background: var(--cta-orange);
       color: var(--white);
+      box-shadow: 0 16px 34px rgba(23, 19, 15, .3);
     }
 
     .hero-art {
@@ -392,41 +394,45 @@
 
     .price-card__label {
       display: block;
-      font-size: .8rem;
+      font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: .12em;
-      margin-bottom: 12px;
+      letter-spacing: .1em;
+      margin-bottom: 14px;
     }
 
     .price-card__value {
       font-family: "Oswald", "Arial Narrow", sans-serif;
       font-weight: 600;
-      font-size: 3.4rem;
+      font-size: 2.7rem;
       letter-spacing: .01em;
-      line-height: 1;
+      line-height: 1.1;
       margin: 0 0 6px;
+      text-decoration: underline;
+      text-decoration-color: var(--cta-orange);
+      text-decoration-thickness: 3px;
+      text-underline-offset: 7px;
     }
 
     .price-card__value span {
       font-family: "DM Sans", sans-serif;
-      font-size: 1.05rem;
+      font-size: .95rem;
       font-weight: 600;
       letter-spacing: 0;
       margin-left: 6px;
     }
 
     .price-card__installment {
-      margin: 0 0 24px;
-      font-size: .95rem;
+      margin: 14px 0 24px;
+      font-size: .78rem;
       color: rgba(23, 19, 15, .72);
     }
 
     .price-card__note {
       margin: 12px 0 0;
-      font-size: .72rem;
+      font-size: .64rem;
       line-height: 1.4;
-      color: rgba(23, 19, 15, .6);
+      color: rgba(23, 19, 15, .55);
     }
 
     footer {
