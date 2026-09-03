@@ -19,8 +19,7 @@
       --lavender-light: #E8D9ED;
       --cream: #FFF5E9;
       --ink: #17130F;
-      --rust: #A8452A;
-      --rust-dark: #8C3821;
+      --cta-orange: #D45B21;
       --white: #FFFDF9;
     }
 
@@ -126,19 +125,20 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background: var(--rust);
-      color: var(--white);
+      background: var(--white);
+      color: var(--cta-orange);
       padding: 17px 30px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: .05em;
       border: 2px solid var(--ink);
-      transition: transform .2s ease, background .2s ease;
+      transition: transform .2s ease, background .2s ease, color .2s ease;
     }
 
     .cta:hover {
       transform: translateY(-3px);
-      background: var(--rust-dark);
+      background: var(--cta-orange);
+      color: var(--white);
     }
 
     .hero-art {
