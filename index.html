@@ -19,6 +19,8 @@
       --lavender-light: #E8D9ED;
       --cream: #FFF5E9;
       --ink: #17130F;
+      --plum: #3B3249;
+      --plum-light: #4E4260;
       --white: #FFFDF9;
     }
 
@@ -124,18 +126,18 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background: var(--ink);
+      background: var(--plum);
       color: var(--white);
-      padding: 16px 25px;
+      padding: 17px 28px;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: .04em;
+      letter-spacing: .05em;
       transition: transform .2s ease, background .2s ease;
     }
 
     .cta:hover {
       transform: translateY(-3px);
-      background: var(--orange-dark);
+      background: var(--plum-light);
     }
 
     .hero-art {
@@ -204,10 +206,12 @@
     }
 
     .section-label {
+      display: inline-block;
       font-size: .78rem;
       font-weight: 800;
       letter-spacing: .16em;
       text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     h2 {
@@ -368,6 +372,64 @@
       font-size: 1.2rem;
     }
 
+    .price-card {
+      max-width: 430px;
+      margin: 48px auto 0;
+      background: var(--plum);
+      color: var(--white);
+      border: 3px solid var(--ink);
+      padding: clamp(30px, 5vw, 44px);
+      text-align: left;
+    }
+
+    .price-card__label {
+      display: block;
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--lavender);
+      margin-bottom: 20px;
+    }
+
+    .price-card__value {
+      font-family: "Anton", Impact, sans-serif;
+      font-size: 3.6rem;
+      line-height: 1;
+      margin: 0 0 10px;
+    }
+
+    .price-card__value span {
+      font-family: "DM Sans", sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      margin-left: 6px;
+    }
+
+    .price-card__installment {
+      margin: 0 0 26px;
+      font-size: .95rem;
+      color: #C7B9D2;
+    }
+
+    .price-card .cta {
+      display: flex;
+      width: 100%;
+      background: var(--orange-dark);
+    }
+
+    .price-card .cta:hover {
+      background: var(--orange);
+    }
+
+    .price-card__note {
+      margin: 16px 0 0;
+      font-size: .76rem;
+      line-height: 1.45;
+      color: #A99BB6;
+    }
+
     footer {
       background: var(--ink);
       color: var(--white);
@@ -409,6 +471,7 @@
       .pillar h3 { font-size: 3rem; }
       .feature { padding: 30px; }
       footer { flex-direction: column; }
+      .price-card__value { font-size: 3rem; }
     }
   </style>
 </head>
@@ -432,7 +495,6 @@
           começar a construir suas próprias peças em crochê, do zero.
         </p>
         <a class="cta" href="#comece">Quero começar</a>
-        <div style="margin-top:16px; font-weight:700; font-size:.95rem;">R$ 97 à vista ou 12x de R$ 10,03</div>
       </div>
 
       <div class="hero-art" aria-label="Ilustração abstrata de um novelo de crochê">
@@ -611,10 +673,13 @@
           primeiro. Precisa começar a treinar a capacidade de decidir por
           conta própria.
         </p>
-        <p style="font-weight:800; font-size:1.3rem; margin-bottom:12px;">
-          R$ 97 à vista ou 12x de R$ 10,03
-        </p>
-        <a class="cta" href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-metodo-crie-croche-4q57j/N107291986P" target="_blank" rel="noopener">Quero começar o Método</a>
+        <div class="price-card">
+          <span class="price-card__label">Acesso à formação completa</span>
+          <p class="price-card__value">R$ 97 <span>à vista</span></p>
+          <p class="price-card__installment">ou 12x de R$ 10,03 no cartão*</p>
+          <a class="cta" href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-metodo-crie-croche-4q57j/N107291986P" target="_blank" rel="noopener">Quero começar a criar</a>
+          <p class="price-card__note">* Parcelamento no cartão sujeito aos juros da operadora; o valor final pode variar.</p>
+        </div>
       </div>
     </section>
 
